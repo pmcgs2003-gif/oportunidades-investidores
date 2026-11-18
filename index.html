@@ -3,472 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Oportunidades para Investidores · Pedro &amp; Ana · Zome</title>
-<meta property="og:title" content="Oportunidades para Investidores · Pedro &amp; Ana">
-<meta property="og:description" content="Prédios para reabilitar e imóveis à venda no Norte, estudados para investidores.">
-<meta property="og:image" content="img/capa_01.jpg">
-<meta name="theme-color" content="#022439">
-<link rel="icon" href="img/pa.png">
-<meta name="description" content="Oportunidades de investimento imobiliário no Norte, da equipa Pedro &amp; Ana (Zome).">
+<title>Pedro &amp; Ana · Oportunidades para investidores</title>
+<meta name="description" content="Prédios para reabilitar e imóveis à venda no Porto e em Braga, estudados para investidores.">
+<meta property="og:title" content="Pedro &amp; Ana · Oportunidades para investidores">
+<meta property="og:description" content="Prédios para reabilitar e imóveis à venda no Porto e em Braga, estudados para investidores.">
+<meta property="og:image" content="img/aerea-sameiro.jpg">
+<meta name="theme-color" content="#213452">
+<link rel="icon" href="img/logo-navy.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=PT+Sans:wght@400;700&display=swap">
-<style>
-/* Layout: faixas alternadas branco / Dark Blue Zome; uma ideia por faixa; fotografia real do imóvel a liderar.
-   Marca: Zome (Dark Blue + Electric Carmine) com Pedro & Ana. Página de tema único, por decisão de marca. */
-:root{
-  --navy:#022439; --navy-2:#0b3550; --carmine:#FF084F; --carmine-ink:#d1003d;
-  --white:#ffffff; --mist:#f2f5f8; --line:#d9e1e8; --ink:#0f2433; --muted:#4f6474;
-  --on-navy:#e9f0f5; --on-navy-muted:#a9bccb;
-  --display:"Montserrat","Nexa","Segoe UI",Arial,sans-serif;
-  --body:"PT Sans","Segoe UI",Arial,sans-serif;
-  --r:10px; --wrap:1160px;
-  color-scheme:light;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.01em;text-wrap:balance;margin:0}
-p{margin:0}
-.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-.band{padding-block:clamp(56px,9vw,104px)}
-.navy{background:var(--navy);color:var(--on-navy)}
-.mist{background:var(--mist)}
-.eyebrow{font:700 13px/1 var(--display);letter-spacing:.12em;text-transform:uppercase;color:var(--carmine)}
-.navy .eyebrow{color:#ff5a86}
-.lead{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:60ch}
-.navy .lead{color:var(--on-navy-muted)}
-.h2{font-size:clamp(28px,4vw,44px);line-height:1.1}
-.head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px)}
-.pending{display:inline-flex;align-items:center;gap:8px;font:700 12px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:8px 12px;border-radius:999px;background:#fff1c2;color:#6b4e00;border:1px dashed #c99a00}
-
-/* botões */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font:700 15px/1 var(--display);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(0) scale(.98)}
-.btn-primary{background:var(--carmine);color:#fff}
-.btn-primary:hover{background:var(--carmine-ink);box-shadow:0 8px 20px -8px rgba(255,8,79,.6)}
-.btn-ghost{border-color:currentColor;background:transparent}
-.btn-ghost:hover{background:rgba(2,36,57,.06)}
-.navy .btn-ghost:hover{background:rgba(255,255,255,.08)}
-.btn .arr{transition:transform .18s ease}
-.btn:hover .arr{transform:translateX(3px)}
-:focus-visible{outline:3px solid var(--carmine);outline-offset:3px;border-radius:6px}
-
-/* topo */
-.top{background:var(--white);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;flex-wrap:wrap;padding-block:10px}
-.logos{display:flex;align-items:center;gap:18px}
-.logos .zome{width:120px;height:auto}
-.logos .pa{width:54px;height:auto}
-.logos .sep{width:1px;height:34px;background:var(--line)}
-.top nav{display:flex;gap:6px;flex-wrap:wrap}
-.top nav a{font:700 14px/1 var(--display);text-decoration:none;padding:12px 12px;border-radius:999px;color:var(--navy);background-image:linear-gradient(var(--carmine),var(--carmine));background-size:0 2px;background-repeat:no-repeat;background-position:12px calc(100% - 6px);transition:background-size .2s ease}
-.top nav a:hover{background-size:calc(100% - 24px) 2px}
-
-/* hero */
-.hero{padding-block:clamp(40px,7vw,88px)}
-.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
-.hero h1{font-size:clamp(34px,5.4vw,62px);line-height:1.04;color:var(--navy)}
-.hero h1 em{font-style:normal;color:var(--carmine)}
-.hero .copy{display:grid;gap:22px;min-width:0}
-.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;max-width:100%;background:var(--mist)}
-.hero-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.hero-photo:hover img{transform:scale(1.025)}
-.hero-photo .tag{position:absolute;left:14px;bottom:14px;background:var(--white);color:var(--navy);font:700 13px/1.2 var(--display);padding:10px 14px;border-radius:999px}
-.facts-row{display:flex;gap:28px;flex-wrap:wrap;padding-top:6px;border-top:1px solid var(--line)}
-.facts-row div{display:grid;gap:2px;padding-top:14px}
-.facts-row b{font:800 22px/1 var(--display);color:var(--navy);font-variant-numeric:tabular-nums}
-.facts-row span{font-size:14px;color:var(--muted)}
-[data-enter]{animation:enter .7s cubic-bezier(.2,.7,.2,1) both}
-[data-enter="2"]{animation-delay:.12s}
-@keyframes enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-
-/* ativos: Sameiro */
-.project{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(24px,4vw,48px);align-items:start}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;min-width:0}
-.gallery figure{margin:0;border-radius:var(--r);overflow:hidden;background:var(--navy-2)}
-.gallery figure:first-child{grid-column:1/-1;aspect-ratio:16/9}
-.gallery figure:not(:first-child){aspect-ratio:4/3}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.gallery figure:hover img{transform:scale(1.03)}
-.pdata{display:grid;gap:22px;min-width:0}
-.pdata h3{font-size:clamp(24px,2.8vw,32px);line-height:1.15;color:#fff}
-.place{color:var(--on-navy-muted)}
-.kpis{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.14);border-radius:var(--r);overflow:hidden}
-.kpis div{background:var(--navy-2);padding:18px 18px 16px;display:grid;gap:4px}
-.kpis b{font:800 clamp(24px,2.6vw,30px)/1.05 var(--display);color:#fff;font-variant-numeric:tabular-nums}
-.kpis .roi b{color:#ff5a86}
-.kpis span{font-size:14px;color:var(--on-navy-muted)}
-.spec{display:grid;gap:8px;font-size:15px;color:var(--on-navy-muted);margin:0;padding:0;list-style:none}
-.spec li{display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:8px}
-.spec li b{color:var(--on-navy);font-weight:700;text-align:right}
-.note{font-size:13px;color:var(--on-navy-muted)}
-.pactions{display:flex;gap:12px;flex-wrap:wrap}
-
-/* passivos */
-.passive{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);align-items:start}
-.how{display:grid;gap:0;margin:0;padding:0;list-style:none;counter-reset:s}
-.how li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}
-.how li::before{content:counter(s);font:800 18px/44px var(--display);text-align:center;width:44px;height:44px;border-radius:50%;background:var(--white);color:var(--navy);border:1px solid var(--line)}
-.how b{font-family:var(--display);color:var(--navy);display:block;margin-bottom:2px}
-.how p{color:var(--muted);font-size:16px}
-.slot{border:2px dashed #b9c7d3;border-radius:var(--r);padding:clamp(22px,3vw,32px);display:grid;gap:14px;background:var(--white)}
-.slot h3{font-size:22px;color:var(--navy)}
-.slot p{color:var(--muted)}
-
-/* carteira Zome */
-.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
-.card{display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;padding:22px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;background:var(--white);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.card:hover{transform:translateY(-2px);box-shadow:0 14px 28px -18px rgba(2,36,57,.45);border-color:#b9c7d3}
-.card .thumb{margin:-22px -22px 0;aspect-ratio:16/10;overflow:hidden;border-radius:var(--r) var(--r) 0 0;background:var(--mist)}
-.card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.card:hover .thumb img{transform:scale(1.03)}
-.card .kind{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.card .ico{width:44px;height:44px;border-radius:12px;background:var(--mist);display:grid;place-items:center;color:var(--navy)}
-.card .deal{font:700 12px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border-radius:999px;background:var(--mist);color:var(--navy)}
-.card .deal.rent{background:#ffe3eb;color:var(--carmine-ink)}
-.card h3{font-size:19px;line-height:1.25;color:var(--navy)}
-.card .loc{font-size:15px;color:var(--muted);margin-top:6px}
-.card .price{font:800 24px/1 var(--display);color:var(--navy);font-variant-numeric:tabular-nums}
-.card .foot{display:flex;justify-content:space-between;align-items:end;gap:10px;padding-top:14px;border-top:1px solid var(--line)}
-.card .ref{font-size:12px;color:var(--muted);letter-spacing:.04em}
-.card .go{font:700 14px/1 var(--display);color:var(--carmine-ink);white-space:nowrap}
-.card:hover .go .arr{transform:translateX(3px)}
-.go .arr{display:inline-block;transition:transform .18s ease}
-.checked{margin-top:18px;font-size:14px;color:var(--muted)}
-
-/* contacto */
-.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);align-items:start}
-.team{display:grid;gap:20px;min-width:0}
-.team-photo{background:#fff;border-radius:var(--r);border:1px solid var(--line);overflow:hidden;display:flex;justify-content:center;padding-top:18px}
-.team-photo img{width:min(340px,80%);height:auto}
-.team .who{display:grid;gap:6px}
-.team .who b{font:800 20px/1.2 var(--display);color:var(--navy)}
-.copyable{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:16px}
-.copyable span{user-select:all}
-form{display:grid;gap:16px;background:var(--mist);padding:clamp(20px,3vw,32px);border-radius:var(--r)}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.field{display:grid;gap:6px;min-width:0}
-label,.legend{font:700 14px/1.2 var(--display);color:var(--navy)}
-input[type=text],input[type=tel],input[type=email],select{width:100%;min-height:48px;padding:10px 14px;border:1px solid #b9c7d3;border-radius:8px;font:400 16px/1.3 var(--body);color:var(--ink);background:#fff}
-input:focus,select:focus{outline:3px solid rgba(255,8,79,.35);outline-offset:0;border-color:var(--carmine)}
-fieldset{border:0;margin:0;padding:0;display:grid;gap:8px;min-width:0}
-.choices{display:flex;flex-wrap:wrap;gap:8px}
-.choice{position:relative}
-.choice input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
-.choice span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #b9c7d3;background:#fff;font:700 14px/1 var(--display);color:var(--navy);transition:background-color .15s ease,border-color .15s ease}
-.choice input:checked+span{background:var(--navy);border-color:var(--navy);color:#fff}
-.choice input:focus-visible+span{outline:3px solid var(--carmine);outline-offset:2px}
-.consent{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;font:400 14px/1.45 var(--body);color:var(--muted)}
-.consent input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--carmine)}
-.err{font-size:13px;color:var(--carmine-ink);min-height:0}
-.err:empty{display:none}
-.done{display:grid;gap:12px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px}
-.done b{font-family:var(--display);color:var(--navy)}
-.done .acts{display:flex;flex-wrap:wrap;gap:10px}
-
-/* rodapé */
-footer{background:var(--navy);color:var(--on-navy-muted);font-size:14px}
-footer .wrap{display:grid;gap:14px;padding-block:36px}
-footer b{color:#fff;font-family:var(--display)}
-footer .legal{max-width:80ch}
-
-@media (max-width:980px){
-  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media (max-width:860px){
-  .hero .wrap,.project,.passive,.contact{grid-template-columns:1fr}
-  .hero-photo{aspect-ratio:16/10}
-}
-@media (max-width:560px){
-  body{font-size:16px}
-  .top nav{display:none}
-  .cards,.row2{grid-template-columns:1fr}
-  .hero .actions .btn,.pactions .btn,form .btn{width:100%}
-  .facts-row{gap:18px}
-  .kpis b{font-size:22px;white-space:nowrap}
-  .kpis div{padding:16px 14px 14px}
-}
-@media (prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-}
-</style>
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-head">
   <div class="wrap">
-    <div class="logos">
-      <img class="zome" src="img/zome.png" alt="Zome Real Estate" width="528" height="154">
-      <span class="sep" aria-hidden="true"></span>
-      <img class="pa" src="img/pa.png" alt="Pedro &amp; Ana" width="384" height="336">
-    </div>
-    <nav aria-label="Secções">
-      <a href="#ativos">Investidor ativo</a>
-      <a href="#passivos">Investidor passivo</a>
-      <a href="#carteira">Carteira</a>
-      <a href="#contacto">Contacto</a>
+    <a class="brand" href="index.html" aria-label="Pedro &amp; Ana, início"><img src="img/logo-navy.png" alt="Pedro &amp; Ana" width="1057" height="927"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="investir.html">Investir</a>
+      <a href="sameiro.html">Projeto Sameiro</a>
+      <a href="imoveis.html">Imóveis à venda</a>
+      <a class="btn btn-solid" href="contacto.html">Fale connosco</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="hero" aria-labelledby="h1">
-    <div class="wrap">
-      <div class="copy" data-enter>
-        <p class="eyebrow">Rede de Investidores · Porto e Braga</p>
-        <h1 id="h1">Prédios para reabilitar e imóveis à venda no <em>Norte</em>, escolhidos para investidores.</h1>
-        <p class="lead">Estudamos cada oportunidade antes de a enviar: números, comparáveis de mercado e documentos. Escolha como quer investir e deixe-nos o seu contacto.</p>
+<main id="conteudo">
+  <section class="hero">
+    <div class="wrap grid">
+      <h1 class="h-xl" data-enter>Imóveis para investir no Norte, estudados antes de chegarem até si.</h1>
+      <div class="side" data-enter="2">
+        <p class="lead">Encontramos prédios para reabilitar e imóveis com margem no Porto e em Braga. Cada oportunidade chega com números, comparáveis de mercado e documentos.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#ativos">Ver projeto para investidor ativo <span class="arr" aria-hidden="true">→</span></a>
-          <a class="btn btn-ghost" href="#contacto" style="color:var(--navy)">Deixar contacto</a>
+          <a class="btn btn-solid" href="investir.html">Ver oportunidades <span class="arr" aria-hidden="true">→</span></a>
         </div>
-        <div class="facts-row" aria-label="Projeto em destaque">
-          <div><b>275.000 €</b><span>compra, Sameiro</span></div>
-          <div><b>12 meses</b><span>prazo estimado</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bleed" data-enter="3">
+    <img src="img/aerea-sameiro.jpg" alt="Vista aérea do prédio do Sameiro, em Braga, com o terreno nas traseiras" width="2000" height="1124">
+  </div>
+
+  <section class="section" aria-labelledby="h-formas">
+    <div class="wrap stack-l">
+      <div class="stack" style="max-width:760px">
+        <p class="label">Como pode investir</p>
+        <h2 id="h-formas" class="h-l">Três formas de entrar, conforme o tempo que quer dedicar.</h2>
+      </div>
+      <div class="ways">
+        <a class="way" href="investir.html#ativos">
+          <div class="ph"><img src="img/vista.jpg" alt="Fachada do prédio do Sameiro" loading="lazy" width="1400" height="787"></div>
+          <h3>Comprar e fazer a obra</h3>
+          <p>Prédios para reabilitar e dividir em frações. O investidor compra e conduz a obra.</p>
+          <span class="more">Ver projetos <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+        <a class="way" href="investir.html#passivos">
+          <div class="ph type"><span>Entrar só com capital</span></div>
+          <h3>Investir sem gerir obra</h3>
+          <p>Projetos executados por um promotor parceiro. Os primeiros estão em preparação.</p>
+          <span class="more">Como funciona <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+        <a class="way" href="imoveis.html">
+          <div class="ph"><img src="https://images.zome.pt/listings/mres/2/0/2/6/1/0/2/2/1/4/4/8/4/2/livingparkviiexterior03_20261116170755.jpg" alt="Exterior do Living Park, em Paredes" loading="lazy" referrerpolicy="no-referrer"></div>
+          <h3>Comprar um imóvel pronto</h3>
+          <p>Apartamentos e armazéns à venda e para arrendar que acompanhamos de perto.</p>
+          <span class="more">Ver imóveis <span class="arr" aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ink" aria-labelledby="h-destaque">
+    <div class="wrap feature">
+      <a class="ph" href="sameiro.html"><img src="img/fachada.jpg" alt="Fachada principal do prédio do Sameiro" loading="lazy" width="1400" height="787"></a>
+      <div class="stack-l">
+        <div class="stack">
+          <p class="label">Projeto em destaque · Braga</p>
+          <h2 id="h-destaque" class="h-l">Prédio de 1938 no Sameiro</h2>
+          <p class="lead">Reabilitar e dividir em 6 ou 7 frações, para vender em 12 meses.</p>
+        </div>
+        <div class="figs">
+          <div><b>275.000 €</b><span>preço de compra</span></div>
           <div><b>≈ 80%</b><span>ROI médio estimado</span></div>
+          <div><b>6 ou 7</b><span>frações</span></div>
+          <div><b>12 meses</b><span>prazo do projeto</span></div>
         </div>
-      </div>
-      <div class="hero-photo" data-enter="2">
-        <img src="img/capa_01.jpg" alt="Vista aérea do Sameiro, em Braga" width="1360" height="614">
-        <span class="tag">Sameiro, Braga</span>
+        <div class="actions"><a class="btn btn-line" href="sameiro.html">Ver o projeto <span class="arr" aria-hidden="true">→</span></a></div>
       </div>
     </div>
   </section>
 
-  <section id="ativos" class="band navy" aria-labelledby="h-ativos">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Para investidores ativos</p>
-        <h2 id="h-ativos" class="h2">Compra, faz a obra e vende por frações.</h2>
-        <p class="lead">Projetos em que o investidor compra o imóvel e conduz a reabilitação. Entregamos o estudo, as hipóteses de divisão e o modelo em Excel.</p>
+  <section class="section" aria-labelledby="h-metodo">
+    <div class="wrap stack-l">
+      <div class="stack" style="max-width:760px">
+        <p class="label">O nosso método</p>
+        <h2 id="h-metodo" class="h-l">Só enviamos o que estudámos primeiro.</h2>
       </div>
-      <article class="project">
-        <div class="gallery">
-          <figure><img src="img/vista.jpg" alt="Fachada do prédio do Sameiro vista de cima, junto à estrada" loading="lazy" width="1400" height="787"></figure>
-          <figure><img src="img/fachada.jpg" alt="Fachada principal do prédio" loading="lazy" width="1400" height="787"></figure>
-          <figure><img src="img/santuario.jpg" alt="Santuário do Sameiro, perto do prédio" loading="lazy" width="1400" height="356"></figure>
-        </div>
-        <div class="pdata">
-          <div>
-            <h3>Prédio de 1938 no Sameiro</h3>
-            <p class="place">Chão do Sameiro, Espinho, Braga</p>
-          </div>
-          <div class="kpis">
-            <div><b>275.000 €</b><span>preço de compra</span></div>
-            <div><b>6 ou 7</b><span>frações, conforme a hipótese</span></div>
-            <div><b>12 meses</b><span>prazo do projeto</span></div>
-            <div class="roi"><b>≈ 80%</b><span>ROI médio estimado</span></div>
-          </div>
-          <ul class="spec">
-            <li><span>Terreno</span><b>682,30 m²</b></li>
-            <li><span>Área bruta de construção</span><b>526,81 m²</b></li>
-            <li><span>Hipótese A</span><b>4 T1 + 3 T2 duplex</b></li>
-            <li><span>Hipótese B</span><b>3 T2 + 3 T2 duplex</b></li>
-          </ul>
-          <p class="note">ROI médio dos quatro cenários do estudo, com comissão de venda de 5%, antes de financiamento e de impostos sobre o rendimento. Valores estimados, não garantidos.</p>
-          <div class="pactions">
-            <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1wMXdfrpg5PGlUDmoerhlWoyHNDEDLMQx" target="_blank" rel="noopener">Abrir dossiê, estudo e Excel <span class="arr" aria-hidden="true">↗</span></a>
-            <a class="btn btn-ghost" href="#contacto">Quero falar sobre o Sameiro</a>
-          </div>
-        </div>
-      </article>
+      <ol class="steps">
+        <li><h3>Estudo</h3><p>Comparáveis de mercado homogeneizados, hipóteses de divisão e preços de venda por tipologia.</p></li>
+        <li><h3>Documentos</h3><p>Dossiê do projeto, estudo de mercado e modelo em Excel com todos os pressupostos editáveis.</p></li>
+        <li><h3>Acompanhamento</h3><p>Visita, negociação e processo até à escritura, com a mesma equipa do princípio ao fim.</p></li>
+      </ol>
     </div>
   </section>
 
-  <section id="passivos" class="band mist" aria-labelledby="h-passivos">
-    <div class="wrap passive">
-      <div class="head" style="margin-bottom:0">
-        <p class="eyebrow">Para investidores passivos</p>
-        <h2 id="h-passivos" class="h2">Entra com capital, um promotor executa o projeto.</h2>
-        <p class="lead">Para quem quer investir sem gerir obra. Os projetos são desenvolvidos com um promotor parceiro e apresentados com os mesmos documentos dos projetos para investidores ativos.</p>
-        <ol class="how">
-          <li><div><b>Diga-nos o seu perfil</b><p>Capital disponível, zonas e prazo.</p></div></li>
-          <li><div><b>Recebe o projeto</b><p>Quando houver um projeto que encaixe, enviamos o dossiê.</p></div></li>
-          <li><div><b>Decide com os números</b><p>Reunião com a equipa e o promotor antes de qualquer compromisso.</p></div></li>
-        </ol>
-      </div>
-      <div class="slot" aria-live="polite">
-        <span class="pending">Em preparação</span>
-        <h3>Projetos com o promotor parceiro</h3>
-        <p>Os primeiros projetos estão a ser definidos. Deixe o contacto com o perfil «passivo» para os receber logo que estejam prontos.</p>
-        <!-- POR PREENCHER (Pedro): projetos do Jorge Pais — nome, zona, capital mínimo, prazo, retorno previsto, modelo de entrada. Confirmar se o nome do promotor pode aparecer. -->
-        <a class="btn btn-primary" href="#contacto" style="justify-self:start">Avisar-me dos projetos <span class="arr" aria-hidden="true">→</span></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="carteira" class="band" aria-labelledby="h-carteira">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Imóveis em carteira na Zome</p>
-        <h2 id="h-carteira" class="h2">Imóveis à venda e para arrendar com a nossa equipa.</h2>
-      </div>
-      <div class="cards">
-        <a class="card" href="https://www.zome.pt/pt/apartamento-t2-porto-paredes-paredes-ZMPT594442" target="_blank" rel="noopener">
-          <div class="thumb"><img src="https://images.zome.pt/listings/mres/2/0/2/6/1/0/2/2/1/4/4/8/4/2/livingparkviiexterior03_20261116170755.jpg" alt="Exterior do Living Park, em Paredes" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></div>
-          <div class="kind"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span><span class="deal">Venda</span></div>
-          <div><h3>Apartamento T2, Living Park</h3><p class="loc">Paredes, Porto</p></div>
-          <div class="foot"><div><p class="price">269.000 €</p><p class="ref">ZMPT594442</p></div><span class="go">Ver anúncio <span class="arr">↗</span></span></div>
-        </a>
-        <a class="card" href="https://www.zome.pt/pt/apartamento-t2_1-porto-paredes-paredes-ZMPT592076" target="_blank" rel="noopener">
-          <div class="thumb"><img src="https://images.zome.pt/listings/mres/2/0/2/6/0/8/1/1/0/8/3/3/5/1sala_20260921233149.jpg" alt="Sala do apartamento T2+1 em Mouriz" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></div>
-          <div class="kind"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2"/></svg></span><span class="deal">Venda</span></div>
-          <div><h3>Apartamento T2+1, Mouriz</h3><p class="loc">Paredes, Porto</p></div>
-          <div class="foot"><div><p class="price">259.900 €</p><p class="ref">ZMPT592076</p></div><span class="go">Ver anúncio <span class="arr">↗</span></span></div>
-        </a>
-        <a class="card" href="https://www.zome.pt/pt/armazem-porto-santo_tirso-santo_tirso_couto_santa_cristina_e_sao_miguel_e_burgaes-ZMPT594056" target="_blank" rel="noopener">
-          <div class="thumb"><img src="https://images.zome.pt/listings/mres/2/0/2/6/1/0/1/2/2/1/2/2/1/1/01capaarmazem_20261012212223.jpg" alt="Armazém em Santo Tirso" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></div>
-          <div class="kind"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-6 9 6v10H3z"/><path d="M7 20v-6h10v6M7 17h10"/></svg></span><span class="deal">Venda</span></div>
-          <div><h3>Armazém em Santo Tirso</h3><p class="loc">Couto (Santa Cristina e São Miguel) e Burgães</p></div>
-          <div class="foot"><div><p class="price">79.000 €</p><p class="ref">ZMPT594056</p></div><span class="go">Ver anúncio <span class="arr">↗</span></span></div>
-        </a>
-        <a class="card" href="https://www.zome.pt/pt/armazem-porto-santo_tirso-santo_tirso_couto_santa_cristina_e_sao_miguel_e_burgaes-ZMPT594557" target="_blank" rel="noopener">
-          <div class="thumb"><img src="https://images.zome.pt/listings/mres/2/0/2/6/1/0/2/6/1/2/1/5/2/8/01capaarmazem20261012212223_20261026121537.jpg" alt="Armazém em Santo Tirso para arrendar" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></div>
-          <div class="kind"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10l9-6 9 6v10H3z"/><path d="M7 20v-6h10v6M7 17h10"/></svg></span><span class="deal rent">Arrendamento</span></div>
-          <div><h3>Armazém em Santo Tirso</h3><p class="loc">Couto (Santa Cristina e São Miguel) e Burgães</p></div>
-          <div class="foot"><div><p class="price">600 €/mês</p><p class="ref">ZMPT594557</p></div><span class="go">Ver anúncio <span class="arr">↗</span></span></div>
-        </a>
-      </div>
-      <p class="checked">Lista confirmada na página Zome a 17/11/2026. Preços e disponibilidade no anúncio.</p>
-    </div>
-  </section>
-
-  <section id="contacto" class="band mist" aria-labelledby="h-contacto">
-    <div class="wrap contact">
-      <div class="team">
-        <div class="head" style="margin-bottom:0">
-          <p class="eyebrow">Contacto</p>
-          <h2 id="h-contacto" class="h2">Diga-nos o que procura.</h2>
-          <p class="lead">Respondemos pessoalmente e só enviamos oportunidades que encaixem no seu perfil.</p>
+  <section class="section sand" aria-labelledby="h-equipa">
+    <div class="wrap team">
+      <div class="ph"><img src="img/team.png" alt="Pedro e Ana" width="711" height="869" loading="lazy"></div>
+      <div class="stack-l">
+        <div class="stack">
+          <p class="label">Quem somos</p>
+          <h2 id="h-equipa" class="h-l">Pedro &amp; Ana</h2>
+          <p class="lead">Consultoria imobiliária no Porto e em Braga. Trabalhamos com uma rede de investidores a quem apresentamos projetos de reabilitação e imóveis com margem.</p>
         </div>
-        <div class="team-photo"><img src="img/team.png" alt="Pedro e Ana" width="711" height="869" loading="lazy"></div>
-        <div class="who">
-          <b>Pedro &amp; Ana · Zome Real Estate</b>
-          <div class="copyable"><span>933 668 720</span><span>pedro.costasilva@zome.pt</span></div>
-        </div>
-      </div>
-
-      <div>
-        <form id="lead" novalidate>
-          <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" required><p class="err" id="e-nome"></p></div>
-          <div class="row2">
-            <div class="field"><label for="f-tel">Telefone</label><input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required><p class="err" id="e-tel"></p></div>
-            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err" id="e-email"></p></div>
-          </div>
-          <fieldset>
-            <legend class="legend">Perfil de investidor</legend>
-            <div class="choices">
-              <label class="choice"><input type="radio" name="perfil" id="f-ativo" value="Ativo"><span>Ativo (compro e faço a obra)</span></label>
-              <label class="choice"><input type="radio" name="perfil" id="f-passivo" value="Passivo"><span>Passivo (entro com capital)</span></label>
-              <label class="choice"><input type="radio" name="perfil" id="f-ambos" value="Ambos"><span>Ambos</span></label>
-            </div>
-            <p class="err" id="e-perfil"></p>
-          </fieldset>
-          <fieldset>
-            <legend class="legend">Zonas de interesse</legend>
-            <div class="choices">
-              <label class="choice"><input type="checkbox" name="zonas" id="z-porto" value="Porto"><span>Porto</span></label>
-              <label class="choice"><input type="checkbox" name="zonas" id="z-braga" value="Braga"><span>Braga</span></label>
-              <label class="choice"><input type="checkbox" name="zonas" id="z-tamega" value="Paredes / Tâmega"><span>Paredes / Tâmega</span></label>
-              <label class="choice"><input type="checkbox" name="zonas" id="z-tirso" value="Santo Tirso / Famalicão"><span>Santo Tirso / Famalicão</span></label>
-              <label class="choice"><input type="checkbox" name="zonas" id="z-outra" value="Outra"><span>Outra</span></label>
-            </div>
-          </fieldset>
-          <div class="field">
-            <label for="f-orc">Orçamento disponível</label>
-            <select id="f-orc" name="orcamento">
-              <option value="">Escolher</option>
-              <option>Até 100.000 €</option>
-              <option>100.000 € a 250.000 €</option>
-              <option>250.000 € a 500.000 €</option>
-              <option>500.000 € a 1.000.000 €</option>
-              <option>Mais de 1.000.000 €</option>
-            </select>
-          </div>
-          <label class="consent" for="f-rgpd">
-            <input type="checkbox" id="f-rgpd" name="rgpd">
-            <span>Autorizo Pedro Silva, consultor imobiliário Zome Real Estate e responsável pelo tratamento destes dados, a guardá-los e a contactar-me por telefone, email ou WhatsApp sobre oportunidades de investimento imobiliário. Os dados são usados só para este fim. Posso pedir acesso, correção ou eliminação, ou retirar o consentimento, a qualquer momento através de pedro.costasilva@zome.pt.</span>
-          </label>
-          <p class="err" id="e-rgpd"></p>
-          <button class="btn btn-primary" type="submit">Enviar pedido de contacto <span class="arr" aria-hidden="true">→</span></button>
-        </form>
-        <div class="done" id="done" hidden>
-          <b id="done-title">Falta um passo: envie a mensagem.</b>
-          <p id="done-text">Abra o WhatsApp com a mensagem já escrita e carregue em enviar. Também pode copiar a mensagem e mandá-la por email para pedro.costasilva@zome.pt.</p>
-          <div class="acts">
-            <a class="btn btn-primary" id="wa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp <span class="arr" aria-hidden="true">↗</span></a>
-            <button class="btn btn-ghost" type="button" id="copy" style="color:var(--navy)">Copiar mensagem</button>
-          </div>
-          <p class="err" id="copy-msg" style="color:var(--muted)"></p>
+        <div class="actions">
+          <a class="btn btn-solid" href="contacto.html">Fale connosco <span class="arr" aria-hidden="true">→</span></a>
         </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="site-foot">
   <div class="wrap">
-    <p><b>Pedro &amp; Ana · Consultoria Imobiliária</b> · Zome Real Estate · Porto e Braga</p>
-    <p class="legal">Os valores apresentados são estimativas baseadas em pressupostos de mercado à data do estudo e não constituem garantia de resultado nem aconselhamento financeiro. A decisão de investimento e a verificação dos documentos são da responsabilidade de cada investidor. Fotografias do Sameiro cedidas pelo anunciante.</p>
+    <img src="img/logo-white.png" alt="Pedro &amp; Ana" width="1057" height="927" loading="lazy">
+    <div class="direct"><span>933 668 720</span><span>pedro.costasilva@zome.pt</span><span>Porto · Braga</span></div>
+    <nav aria-label="Rodapé"><a href="investir.html">Investir</a><a href="sameiro.html">Projeto Sameiro</a><a href="imoveis.html">Imóveis à venda</a><a href="contacto.html">Contacto</a></nav>
+    <p class="legal">Os valores apresentados são estimativas baseadas em pressupostos de mercado à data de cada estudo. Não constituem garantia de resultado nem aconselhamento financeiro. A decisão de investimento e a verificação dos documentos cabem a cada investidor.</p>
   </div>
 </footer>
-
-<script>
-/* Endereço do Apps Script (Implementar > Aplicação Web). Enquanto estiver vazio, os pedidos seguem só por WhatsApp. */
-const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbwj1Sc9jBLNYj59ZHf8kmzD-LFolBwf22ziMJOV2O1AQLl-WLXs3jQuSwCrFx_oKbhKww/exec";
-(function(){
-  const f=document.getElementById('lead');
-  const done=document.getElementById('done');
-  const $=id=>document.getElementById(id);
-  function setErr(id,msg){$(id).textContent=msg||''}
-  function msgText(d){
-    return ['Olá Pedro, gostava de receber oportunidades de investimento.',
-      'Nome: '+d.nome,'Telefone: '+d.telefone,'Email: '+d.email,
-      'Perfil: '+(d.perfil||'—'),'Zonas: '+(d.zonas.join(', ')||'—'),'Orçamento: '+(d.orcamento||'—'),
-      'Autorizo o contacto sobre oportunidades de investimento (RGPD).'].join('\n');
-  }
-  let lastMsg='';
-  f.addEventListener('submit',async e=>{
-    e.preventDefault();
-    const d={
-      nome:$('f-nome').value.trim(),telefone:$('f-tel').value.trim(),email:$('f-email').value.trim(),
-      perfil:(f.querySelector('input[name=perfil]:checked')||{}).value||'',
-      zonas:[...f.querySelectorAll('input[name=zonas]:checked')].map(x=>x.value),
-      orcamento:$('f-orc').value,rgpd:$('f-rgpd').checked
-    };
-    let ok=true;
-    setErr('e-nome',d.nome?'':'Escreva o seu nome.');ok=ok&&!!d.nome;
-    const telOk=d.telefone.replace(/\D/g,'').length>=9;setErr('e-tel',telOk?'':'Escreva um telefone com pelo menos 9 dígitos.');ok=ok&&telOk;
-    const emOk=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email);setErr('e-email',emOk?'':'Escreva um email válido, por exemplo nome@dominio.pt.');ok=ok&&emOk;
-    setErr('e-perfil',d.perfil?'':'Escolha um perfil.');ok=ok&&!!d.perfil;
-    setErr('e-rgpd',d.rgpd?'':'Para o podermos contactar, assinale a autorização.');ok=ok&&d.rgpd;
-    if(!ok){const firstErr=f.querySelector('.err:not(:empty)');if(firstErr)firstErr.scrollIntoView({block:'center',behavior:'smooth'});return}
-    lastMsg=msgText(d);
-    $('wa').href='https://wa.me/351933668720?text='+encodeURIComponent(lastMsg);
-    const btn=f.querySelector('button[type=submit]');
-    let saved=false;
-    if(FORM_ENDPOINT){
-      btn.disabled=true;btn.firstChild.textContent='A enviar… ';
-      try{
-        const body=new URLSearchParams({nome:d.nome,telefone:d.telefone,email:d.email,perfil:d.perfil,zonas:d.zonas.join(', '),orcamento:d.orcamento,rgpd:'sim',origem:'Página oportunidades',pagina:location.href});
-        await fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',body});
-        saved=true;
-      }catch(err){saved=false}
-      btn.disabled=false;btn.firstChild.textContent='Enviar pedido de contacto ';
-    }
-    if(saved){
-      $('done-title').textContent='Pedido enviado. Vamos contactá-lo.';
-      $('done-text').textContent='Se preferir uma resposta mais rápida, envie também a mensagem pelo WhatsApp.';
-    }
-    f.hidden=true;done.hidden=false;done.scrollIntoView({block:'center',behavior:'smooth'});
-  });
-  $('copy').addEventListener('click',()=>{
-    navigator.clipboard.writeText(lastMsg).then(()=>{$('copy-msg').textContent='Mensagem copiada.'}).catch(()=>{$('copy-msg').textContent=lastMsg});
-  });
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>

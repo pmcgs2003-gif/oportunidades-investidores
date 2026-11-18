@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Contacto · Pedro &amp; Ana</title>
+<meta name="description" content="Deixe o seu contacto para receber oportunidades de investimento imobiliário no Porto e em Braga.">
+<meta property="og:title" content="Contacto · Pedro &amp; Ana">
+<meta name="theme-color" content="#213452">
+<link rel="icon" href="img/logo-navy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Pedro &amp; Ana, início"><img src="img/logo-navy.png" alt="Pedro &amp; Ana" width="1057" height="927"></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="investir.html">Investir</a>
+      <a href="sameiro.html">Projeto Sameiro</a>
+      <a href="imoveis.html">Imóveis à venda</a>
+      <a class="btn btn-solid" href="contacto.html" aria-current="page">Fale connosco</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section class="section" style="padding-top:clamp(48px,7vw,96px)">
+    <div class="wrap contact">
+      <div class="stack-l">
+        <div class="stack">
+          <p class="label" data-enter>Contacto</p>
+          <h1 class="h-l" data-enter="2">Diga-nos o que procura.</h1>
+          <p class="lead" data-enter="3">Respondemos pessoalmente e só enviamos oportunidades que encaixem no seu perfil.</p>
+        </div>
+        <div class="team"><div class="ph" style="grid-column:1/-1"><img src="img/team.png" alt="Pedro e Ana" width="711" height="869"></div></div>
+        <div class="direct">
+          <b style="font:400 24px/1.2 var(--display)">Pedro &amp; Ana</b>
+          <span>933 668 720</span>
+          <span>pedro.costasilva@zome.pt</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="tag" id="f-interesse" hidden style="margin-bottom:24px"></p>
+        <form id="lead" novalidate>
+          <div class="field"><label for="f-nome">Nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" required><p class="err" id="e-nome"></p></div>
+          <div class="row2">
+            <div class="field"><label for="f-tel">Telefone</label><input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required><p class="err" id="e-tel"></p></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><p class="err" id="e-email"></p></div>
+          </div>
+          <fieldset>
+            <legend class="legend">Perfil de investidor</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="perfil" id="f-ativo" value="Ativo"><span>Ativo · compro e faço a obra</span></label>
+              <label class="choice"><input type="radio" name="perfil" id="f-passivo" value="Passivo"><span>Passivo · entro com capital</span></label>
+              <label class="choice"><input type="radio" name="perfil" id="f-ambos" value="Ambos"><span>Ambos</span></label>
+            </div>
+            <p class="err" id="e-perfil"></p>
+          </fieldset>
+          <fieldset>
+            <legend class="legend">Zonas de interesse</legend>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="zonas" id="z-porto" value="Porto"><span>Porto</span></label>
+              <label class="choice"><input type="checkbox" name="zonas" id="z-braga" value="Braga"><span>Braga</span></label>
+              <label class="choice"><input type="checkbox" name="zonas" id="z-tamega" value="Paredes / Tâmega"><span>Paredes / Tâmega</span></label>
+              <label class="choice"><input type="checkbox" name="zonas" id="z-tirso" value="Santo Tirso / Famalicão"><span>Santo Tirso / Famalicão</span></label>
+              <label class="choice"><input type="checkbox" name="zonas" id="z-outra" value="Outra"><span>Outra</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-orc">Orçamento disponível</label>
+            <select id="f-orc" name="orcamento">
+              <option value="">Escolher</option>
+              <option>Até 100.000 €</option>
+              <option>100.000 € a 250.000 €</option>
+              <option>250.000 € a 500.000 €</option>
+              <option>500.000 € a 1.000.000 €</option>
+              <option>Mais de 1.000.000 €</option>
+            </select>
+          </div>
+          <label class="consent" for="f-rgpd">
+            <input type="checkbox" id="f-rgpd" name="rgpd">
+            <span>Autorizo Pedro Silva, consultor imobiliário e responsável pelo tratamento destes dados, a guardá-los e a contactar-me por telefone, email ou WhatsApp sobre oportunidades de investimento imobiliário. Os dados são usados só para este fim. Posso pedir acesso, correção ou eliminação, ou retirar o consentimento, a qualquer momento através de pedro.costasilva@zome.pt.</span>
+          </label>
+          <p class="err" id="e-rgpd"></p>
+          <button class="btn btn-solid" type="submit">Enviar pedido de contacto <span class="arr" aria-hidden="true">→</span></button>
+        </form>
+        <div class="done" id="done" hidden>
+          <b id="done-title">Pedido enviado. Vamos contactá-lo.</b>
+          <p id="done-text" class="lead">Se preferir uma resposta mais rápida, envie também a mensagem pelo WhatsApp.</p>
+          <div class="actions">
+            <a class="btn btn-solid" id="wa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp <span class="arr" aria-hidden="true">↗</span></a>
+            <button class="btn btn-line" type="button" id="copy">Copiar mensagem</button>
+          </div>
+          <p class="note" id="copy-msg"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <img src="img/logo-white.png" alt="Pedro &amp; Ana" width="1057" height="927" loading="lazy">
+    <div class="direct"><span>933 668 720</span><span>pedro.costasilva@zome.pt</span><span>Porto · Braga</span></div>
+    <nav aria-label="Rodapé"><a href="investir.html">Investir</a><a href="sameiro.html">Projeto Sameiro</a><a href="imoveis.html">Imóveis à venda</a><a href="contacto.html">Contacto</a></nav>
+    <p class="legal">Os valores apresentados são estimativas baseadas em pressupostos de mercado à data de cada estudo. Não constituem garantia de resultado nem aconselhamento financeiro. A decisão de investimento e a verificação dos documentos cabem a cada investidor.</p>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
